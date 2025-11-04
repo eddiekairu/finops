@@ -7,10 +7,12 @@ print("                 ")
 
 calculation_type = input("What would you like to calculate? (Simple/Compound): ").lower()
 
+#collect required input
 principal = float (input("Enter the principal amount: $"))
 rate = float (input("Enter the annual interest rate (%): "))
 time = float (input("Enter the time period in years: "))
 
+#perform the calculations based on choice of the user.
 if calculation_type == "simple":
     simple_interest = (principal * rate * time) / 100
     total_amount = principal + simple_interest
