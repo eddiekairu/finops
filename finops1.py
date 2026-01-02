@@ -4,8 +4,14 @@ print("Welcome to finops!")
 print("                 ")
 
 #Ask the user the type of calculation they want
+while True: 
+ calculation_type = input("What would you like to calculate? (Simple/Compound): ").lower()
 
-calculation_type = input("What would you like to calculate? (Simple/Compound): ").lower()
+ if calculation_type == "simple" or calculation_type == "compound":
+    break
+ else:
+    print("Invalid option. Please choose either Simple/Compound")
+
 
 #collect required input
 principal = float (input("Enter the principal amount: $"))
