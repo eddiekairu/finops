@@ -1,6 +1,6 @@
 #finops v1. A simple finance tool to calculate simple interest or compound interest.
 
-print("Welcome to finops!")
+print("Welcome to Finops!")
 print("                 ")
 
 #Ask the user the type of calculation they want
@@ -24,7 +24,7 @@ if calculation_type == "simple":
     total_amount = principal + simple_interest
     print(f"\nSimple Interest is $ {simple_interest: .2f}")
     print(f"Total amount after {time} years is ${total_amount: .2f}")
-    print("Thank you for using finops!")
+    print("Thank you for using Finops!")
 
 elif calculation_type == "compound":
     n = int(input("Enter number of times interest is compounded per year: "))
@@ -32,8 +32,8 @@ elif calculation_type == "compound":
     compound_interest = total_amount - principal
     print(f"\nCompound Interest is $ {compound_interest: .2f}")
     print(f"Total amount after {time} years is ${total_amount: .2f}")
-    print("Thank you for using finops!")
+    print("Thank you for using Finops!")
 
 else:
     print("Invalid option. Please choose either Simple or Compound.")
-    print("Thank you for using finops!")
+    print("Thank you for using Finops!")
